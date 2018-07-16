@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<title>
+		
+	</title>
+</head>
+<body class="personal">
+	<h1>Personalize Your Marvel Hero</h1>
+	<form method="POST" action="/superheroes/<%=heroList.id%>?_method=PUT">
+		Name: </br><input type="text" name="name" value="<%=heroList.name%>"/></br></br>
+		Image: </br><input type="input" id="pic" name="img" value="<%=heroList.img%>"/></br></br>
+		Height: </br><input type="input" id="height" name="height" value="<%=heroList.height%>"/></br></br>
+		Weight: </br><input type="input" id="weight" name="weight" value="<%=heroList.weight%>"/></br></br>
+		Attacks: </br><input type="input" id="attacks" name="attacks" value="<%=heroList.attacks%>"/></br></br>
+		Bio: </br><input type="input" id="bio" name="bio" value="<%=heroList.bio%>"/></br>
+		</br><input type="submit" value="Submit Changes"/>
+	</form>
+
+</body>
+</html>
